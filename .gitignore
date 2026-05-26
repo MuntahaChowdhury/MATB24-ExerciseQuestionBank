@@ -1,3 +1,15 @@
 Solution.tex
 Solution.pdf
 *synctex.gz
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.idx
+*.ind
+*.ilg
