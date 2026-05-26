@@ -5,6 +5,7 @@
 \usepackage{amssymb, amsthm}
 \usepackage{mathtools}
 \usepackage{fancyhdr}
+\usepackage{enumitem}
 
 % ---------- CUSTOM COUNTERS & COMMANDS ----------
 \newcounter{problemnum}
@@ -141,9 +142,38 @@ group of a rectangle.
 }
 
 \problem{
-  2.2.9. 
+  2.2.9. Let $(\mathcal{R}, +, \cdot)$ be a ring and suppose that $\alpha \in \mathcal{R}$ has a multiplicative inverse. Moreover,
+suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
 }
 
+\problem{
+  2.2.10. Does the set of functions with infinitely many roots form a subring of $\mathcal{F}(\mathbb{R})$? Justify your answer.
+}
+
+\problem{
+  2.2.11. Prove the following statements:
+  \begin{enumerate}[label=(\alph*)]
+    \item There exist rings \((\mathcal{R}, +, \cdot)\) with an identity element \(1_\mathcal{R}\) such that \(1_\mathcal{R} \notin S\) for some subring \(S\). 
+    \item \text{[TERM TEST QUESTION]} There may exist a ring \(\mathcal{R}\) with an identity element \(1_{\mathcal{R}}\) and a subring \(S \subseteq \mathcal{R}\) such that \(S\) has its own identity element \(1_S\), where \(1_S \neq 1_{\mathcal{R}}\).
+  \end{enumerate}
+}
+
+\problem{
+  2.2.12 Determine the zero and the identity elements of the polynomial ring $(\mathcal{R}[x], +, \cdot)$ where $\mathcal{R} = \mathcal{C}(\mathcal{M}_{2\times 2}(\mathbb{R}))$.
+}
+
+\problem{
+  2.2.13 True/False. Justify:
+  \begin{enumerate}
+    \item Let $\mathbb{F}$ be any field. Suppose that $\alpha$ and $\beta$ are two elements of an extension field $\mathbb{K}$ of $\mathbb{F}$. Then $\mathbb{F}(\alpha)$ and
+$\mathbb{F}(\beta)$ are always distinct extension fields of $\mathbb{F}$.
+    \item Given any set $X$, there is no operation · that can be defined on $[X]^{\leq\left\|X\right\|}$ that makes it a group.
+    \item Given a monoid $(\mathcal{S}, *)$ there exists a binary operation $\cdot$ on $\mathcal{S}$ such that $(\mathcal{S}, \cdot)$ no longer admits an identity element. If so, what assumption did you need to make?
+    \item $(\mathbb{R}, \cdot)$ forms a group.
+    \item $(\mathbb{R}, +)$ forms a group with the identity element being 1.
+    \item Suppose $(\mathbb{F}, +, \cdot)$ is the field. Then $(\mathbb{F}, +)$ and $(\mathbb{F}, \cdot)$ both form a group.
+  \end{enumerate}
+}
 \vspace{0.8em}
 
 % ========== START HERE ==========
