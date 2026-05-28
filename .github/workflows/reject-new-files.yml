@@ -1,0 +1,43 @@
+name: Reject New Files
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Look for new files
+        id: count-new
+        run: |
+          # Compare the PR branch to the main branch and look for added (A) files
+          NEW_FILES=$(git diff --name-status origin/${{ github.base_ref }}...HEAD | grep -E "^A" | wc -l)
+          echo "Number of new files: $NEW_FILES"
+          echo "count=$NEW_FILES" >> $GITHUB_OUTPUT
+
+      - name: Close Pull Request
+        if: steps.count-new.outputs.count > 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ This pull request was automatically closed because it adds new files. Only file modifications are allowed.'
+            });
+            github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              state: 'closed'
+            });
