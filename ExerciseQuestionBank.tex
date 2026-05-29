@@ -16,7 +16,7 @@
   \setcounter{subpartnum}{0}
   \vspace{0.8em}
   \noindent
-  \large\boldmath{\textbf{#1}}
+  {\boldmath{\textbf{#1}}}
   \nopagebreak
   \vspace{0.4em}
   \par
@@ -33,10 +33,12 @@
 \newenvironment{solution}{
   \vspace{0.2em}
   \noindent
+  \normalsize
   \textit{Solution:}
   \nopagebreak
   \begin{list}{}{
     \setlength{\leftmargin}{2em}
+    \setlength{\parsep}{0.8em}
     \setlength{\itemindent}{0em}
   }
   \item
