@@ -265,12 +265,12 @@ $\F(\beta)$ are always distinct extension fields of $\F$.
 
 
 \problem{
-3.1.2. Prove properties 2, 4 and 5 of Theorem 3.1.2, namely, for any vector space $\mathbb{V}=(V,\boxplus,\odot,(\mathbb{F},+,\cdot))$ over field $\mathbb{F}$:
-\begin{itemize}
-    \item The additive inverse of any $v\in V$ is unique.
-    \item Any scalar of the zero vector yields the zero vector, i.e. $\forall\,\alpha\in\mathbb{F},\,a\odot\vec{0}=\vec{0}$.
-    \item For all $v\in V$ and $c\in\mathbb{F}$, $(-c) \odot v = c \odot (-v) = -1 \odot (c \odot v)$.
-\end{itemize}
+3.1.2. Prove properties 2, 4 and 5 of Theorem 3.1.2, namely, for any vector space $V=(V,\boxplus,\odot,(\mathbb{F},+,\cdot))$ over field $\mathbb{F}$:
+\begin{enumerate}
+    \item[2.] The additive inverse of any $v\in V$ is unique.
+    \item[4.] Any scalar of the zero vector yields the zero vector, i.e. $\forall\,\alpha\in\mathbb{F},\,a\odot\vec{0}=\vec{0}$.
+    \item[5.] For all $v\in V$ and $c\in\mathbb{F}$, $(-c) \odot v = c \odot (-v) = -1 \odot (c \odot v)$.
+\end{enumerate}
 }
 
 \begin{solution}
@@ -287,7 +287,7 @@ $\F(\beta)$ are always distinct extension fields of $\F$.
 
 
 \problem{
-3.2.2. Prove Theorem 3.2.3, namely: Let $J$ be any index set to enumerate the elements of another set. Let $\{W_\alpha\mid\alpha\in J\}$ be a collection of subspaces of $V$. Then $\bigcap\limits_{\alpha\in J} W_{\alpha}$ is a subspace of $V$.
+3.2.2. Prove Theorem 3.2.3, namely: Let $J$ be any index set (It is a set whose elements are used to enumerate the elements of another set.) and let $\{W_\alpha\mid\alpha\in J\}$ be a collection of subspaces of $V$. Then $\bigcap\limits_{\alpha\in J} W_{\alpha}$ is a subspace of $V$.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -309,7 +309,8 @@ $\F(\beta)$ are always distinct extension fields of $\F$.
 
 
 \problem{
-3.4.1. Prove Proposition 3.4.1, namely, the following: Let $T\colon V\to W$ be a linear transformation from $V$ to $W$. Then:
+3.4.1. Prove Proposition 3.4.1, namely, the following: \\
+Let $T\colon V\to W$ be a linear transformation from $V$ to $W$. Then:
 \begin{enumerate}
     \item For all $x,\,y\in V$, $T(x-y)=T(x)-T(y)$
     \item T maps the zero vector $\vec{0}_V$ of $V$ to the zero vector $\vec{0}_W$ of W.
@@ -322,14 +323,17 @@ $\F(\beta)$ are always distinct extension fields of $\F$.
 \end{solution}
 
 
-\problem{3.4.2. Prove Theorem 2.4.2 (currently, this theorem does not exist on the lecture notes, but Pourya will surely fix this in no time.)}
+\problem{3.4.2. Prove Theorem 2.4.2 (currently under fix. please ignore this question)}
 \vspace{0.8em}
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
 
-\problem{3.4.3. Prove Theorem 3.4.2, namely, show that $(\cL(V,W),\boxplus,\odot,(\F,+\cdot))$ forms a vector space over $\F$, where $\boxplus$ and $\odot$ are the pointwise addition of linear maps and scalar multiplication with the linear map in $W$, respectively. That being, $\boxplus$ is the vector addition operation in $W$ and $\odot$ is the scalar multiplication operation in $W$.0}
+\problem{3.4.3. Prove Theorem 3.4.2, namely, \\
+  Show that $(\cL(V,W),\boxplus,\odot,(\F,+\cdot))$ forms a vector space over $\F$, where $\boxplus$ and $\odot$ are the pointwise addition of linear maps and scalar multiplication with the linear map in $W$, respectively. \\
+  That is, $\cL(V,W)$ is closed under both $\boxplus$ and $\odot$. That is to show that $T\boxplus S$ and $\alpha \odot T$ are indeed linear transformations from V to W and all the axioms of a vector space are satisfied.
+}
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
