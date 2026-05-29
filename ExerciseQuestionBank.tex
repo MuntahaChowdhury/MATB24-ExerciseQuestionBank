@@ -79,6 +79,20 @@
 \title{\textbf{\courseName}}
 \author{\studentName}
 
+% ----- SHORTHAND ----------
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cC}{\mathcal{C}}
+
 \begin{document}
 
 \begin{center}
@@ -98,25 +112,39 @@
 % Please use the features \problems, \subpart, \begin{solution}, \justify, \boldstatement{}, etc. to write your solutions in a clear and organized manner.
 %
 % Please help gather all the problems for the course into this file for the good of the public.
-
+%
+% The following are shorthand for the following commands:
+%
+%   \mathbb{Q} => \Q
+%   \mathbb{Z} => \Z
+%   \mathbb{R} => \R
+%   \mathbb{C} => \C
+%   \mathbb{F} => \F
+%   \mathbb{N} => \N
+%   \mathbb{K} => \K
+%   \mathcal{M} => \cM
+%   \mathcal{R} => \cR
+%   \mathcal{P} => \cP
+%   \mathcal{L} => \cL
+%   \mathcal{C} => \cC
 
 % ---------- PROBLEMS ---------- 
 \problem{
-  2.1.1. Consider the set $X = \mathbb{Q} \setminus \{0\}$ and the map $\star$ is depicted by $a \star b = \frac{a}{b}$. Is $\star$ a binary operation?
+  2.1.1. Consider the set $X = \Q \setminus \{0\}$ and the map $\star$ is depicted by $a \star b = \frac{a}{b}$. Is $\star$ a binary operation?
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
 \problem{
-  2.1.2. Is $(\mathcal{P}(\mathbb{N}), \cap)$ a monoid? what is the identity element? How about $(\mathcal{P}(\mathbb{N}), \cup)$ for any arbitrary set $X$?
+  2.1.2. Is $(\cP(\N), \cap)$ a monoid? what is the identity element? How about $(\cP(\N), \cup)$ for any arbitrary set $X$?
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
 \problem{
-  2.2.1. Suppose $d$ is square-free, so there is no integer $m$ such that $m^2 = d$. Show that ($\mathbb{Q}(\sqrt{d})$, +, ·)
+  2.2.1. Suppose $d$ is square-free, so there is no integer $m$ such that $m^2 = d$. Show that ($\Q(\sqrt{d})$, +, ·)
 forms a field. What happens if $d = m^2$ for some $m$?
 }
 \begin{solution}
@@ -131,7 +159,7 @@ forms a field. What happens if $d = m^2$ for some $m$?
 \end{solution}
 
 \problem{
-  2.2.3. Prove that $0_\mathbb{F}$, $1_\mathbb{F}$ and the additive inverse element $-a$ of any element $a \in F$ are unique.
+  2.2.3. Prove that $0_\F$, $1_\F$ and the additive inverse element $-a$ of any element $a \in F$ are unique.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -139,14 +167,14 @@ forms a field. What happens if $d = m^2$ for some $m$?
 
 
 \problem{
-  2.2.4. Prove $(-a)(-b) = ab$ for all $a, b \in \mathbb{F}$.
+  2.2.4. Prove $(-a)(-b) = ab$ for all $a, b \in \F$.
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
 \problem{
-  2.2.5. Prove that the triple $(\mathbb{Z}_p, + \mod p, \cdot \mod p)$ is a field $\iff$ p is a prime. Use the fact that if two integers $m$, $n$ are relatively prime, then there
+  2.2.5. Prove that the triple $(\Z_p, + \mod p, \cdot \mod p)$ is a field $\iff$ p is a prime. Use the fact that if two integers $m$, $n$ are relatively prime, then there
 exist integers $r$ and $s$ such that $mr + ns = 1$.
 }
 \begin{solution}
@@ -164,7 +192,7 @@ group of a rectangle.
 
 
 \problem{
-  2.2.7. Characterise all idempotent elements of $(\mathcal{M}_{2\times 2}(\mathbb{R}), +, \cdot)$.
+  2.2.7. Characterise all idempotent elements of $(\cM_{2\times 2}(\R), +, \cdot)$.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -172,7 +200,7 @@ group of a rectangle.
 
 
 \problem{
-  2.2.8. Prove that $\mathcal{C}(\mathcal{R})$ is a subring of any ring $(\mathcal{R}, +, \cdot)$.
+  2.2.8. Prove that $\cC(\cR)$ is a subring of any ring $(\cR, +, \cdot)$.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -180,8 +208,8 @@ group of a rectangle.
 
 
 \problem{
-  2.2.9. Let $(\mathcal{R}, +, \cdot)$ be a ring and suppose that $\alpha \in \mathcal{R}$ has a multiplicative inverse. Moreover,
-suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
+  2.2.9. Let $(\cR, +, \cdot)$ be a ring and suppose that $\alpha \in \cR$ has a multiplicative inverse. Moreover,
+suppose that $\alpha \in C(\cR)$. Is $\alpha^{-1} \in C(\cR)$?
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -189,7 +217,7 @@ suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
 
 
 \problem{
-  2.2.10. Does the set of functions with infinitely many roots form a subring of $\mathcal{F}(\mathbb{R})$? Justify your answer.
+  2.2.10. Does the set of functions with infinitely many roots form a subring of $\mathcal{F}(\R)$? Justify your answer.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -199,8 +227,8 @@ suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
 \problem{
   2.2.11. Prove the following statements:
   \begin{enumerate}[label=(\alph*)]
-    \item There exist rings \((\mathcal{R}, +, \cdot)\) with an identity element \(1_\mathcal{R}\) such that \(1_\mathcal{R} \notin S\) for some subring \(S\). 
-    \item \text{[TERM TEST QUESTION]} There may exist a ring \(\mathcal{R}\) with an identity element \(1_{\mathcal{R}}\) and a subring \(S \subseteq \mathcal{R}\) such that \(S\) has its own identity element \(1_S\), where \(1_S \neq 1_{\mathcal{R}}\).
+    \item There exist rings \((\cR, +, \cdot)\) with an identity element \(1_\cR\) such that \(1_\cR \notin S\) for some subring \(S\). 
+    \item \text{[TERM TEST QUESTION]} There may exist a ring \(\cR\) with an identity element \(1_{\cR}\) and a subring \(S \subseteq \cR\) such that \(S\) has its own identity element \(1_S\), where \(1_S \neq 1_{\cR}\).
   \end{enumerate}
 }
 \begin{solution}
@@ -209,7 +237,7 @@ suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
 
 
 \problem{
-  2.2.12 Determine the zero and the identity elements of the polynomial ring $(\mathcal{R}[x], +, \cdot)$ where $\mathcal{R} = \mathcal{C}(\mathcal{M}_{2\times 2}(\mathbb{R}))$.
+  2.2.12 Determine the zero and the identity elements of the polynomial ring $(\cR[x], +, \cdot)$ where $\cR = \cC(\cM_{2\times 2}(\R))$.
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -219,13 +247,13 @@ suppose that $\alpha \in C(\mathcal{R})$. Is $\alpha^{-1} \in C(\mathcal{R})$?
 \problem{
   2.2.13 True/False. Justify:
   \begin{enumerate}
-    \item Let $\mathbb{F}$ be any field. Suppose that $\alpha$ and $\beta$ are two elements of an extension field $\mathbb{K}$ of $\mathbb{F}$. Then $\mathbb{F}(\alpha)$ and
-$\mathbb{F}(\beta)$ are always distinct extension fields of $\mathbb{F}$.
+    \item Let $\F$ be any field. Suppose that $\alpha$ and $\beta$ are two elements of an extension field $\K$ of $\F$. Then $\F(\alpha)$ and
+$\F(\beta)$ are always distinct extension fields of $\F$.
     \item Given any set $X$, there is no operation · that can be defined on $[X]^{\leq\left\|X\right\|}$ that makes it a group.
     \item Given a monoid $(\mathcal{S}, *)$ there exists a binary operation $\cdot$ on $\mathcal{S}$ such that $(\mathcal{S}, \cdot)$ no longer admits an identity element. If so, what assumption did you need to make?
-    \item $(\mathbb{R}, \cdot)$ forms a group.
-    \item $(\mathbb{R}, +)$ forms a group with the identity element being 1.
-    \item Suppose $(\mathbb{F}, +, \cdot)$ is the field. Then $(\mathbb{F}, +)$ and $(\mathbb{F}, \cdot)$ both form a group.
+    \item $(\R, \cdot)$ forms a group.
+    \item $(\R, +)$ forms a group with the identity element being 1.
+    \item Suppose $(\F, +, \cdot)$ is the field. Then $(\F, +)$ and $(\F, \cdot)$ both form a group.
   \end{enumerate}
 }
 \begin{solution}
